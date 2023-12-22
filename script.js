@@ -7,18 +7,22 @@ function main() {
   let playerChoice;
 
   let getNpcChoice = () => Math.floor(Math.random()*3);
+  console.clear();
 
 
   do {
     playerChoice = prompt('Pick rock, paper, scissor: ').trim().toLowerCase();
   } while (!choices.includes(playerChoice));
-  console.clear();
 
   playerChoice = choices.indexOf(playerChoice);
 
   let npcChoice = getNpcChoice();
-  console.log(playerChoice);
-  console.log(npcChoice);
+  
+  // this is for debugging purposes
+  // console.log(playerChoice);
+  // console.log(npcChoice);
+
+  console.log('\n');
 
   let template = `Player choose ${choices[playerChoice]} and NPC choose ${choices[npcChoice]}`;
 
@@ -29,6 +33,11 @@ function main() {
   } else {
     console.log("It's a draw!")
   }
+  console.log('\n')
+  let rematch;
+  rematch = prompt('Do you want to play again?(y/n): ');
+  console.clear();
+  (rematch.trim().toLowerCase().includes('y') === true) ? main() : process.exit();
 }
 
 main();
