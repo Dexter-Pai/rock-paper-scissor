@@ -30,14 +30,14 @@ function main() {
 
   let template = `Player chooses ${choices[playerChoice]} and NPC choose ${choices[npcChoice]}`;
 
-  if (playerChoice > npcChoice || (playerChoice === 3 && npcChoice === 0)) {
+  if ((playerChoice === 1 && npcChoice === 0) || (playerChoice === 2 && npcChoice === 1) || (playerChoice === 0 && npcChoice === 2)) {
     console.log('Player Wins! ' + template);
     scores.player++;
-  } else if (npcChoice > playerChoice || (npcChoice === 3 && playerChoice === 0)) {
+  } else if (npcChoice === playerChoice) {
+    console.log("It's a draw!")
+  } else {
     console.log('Player Loses! ' + template);
     scores.npc++;
-  } else {
-    console.log("It's a draw!")
   }
   // debug
   // console.log(scores.player);
