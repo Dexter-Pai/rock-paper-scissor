@@ -1,16 +1,11 @@
 # rock-paper-scissor
-Rock-Paper-Scissor game, developed for the console without GUI
+Rock-Paper-Scissor game with codes refactored to work with browsers and a UI.
 
 # requirements
-- This app is developed to run with node.js in the console.
-- You need to preinstall prompt-sync for node.js.
-- To install, run this command in bash.
-```
-npm install prompt-sync
-```
+- None
 
 # how to run this program
-- to run this program, simply enter node script.js in the console.
+- Simply download the program and use live server to host it to your localhost.
 
 # program features
 - Math methods are used to determine npc moves.
