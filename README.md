@@ -1,6 +1,9 @@
 # rock-paper-scissor
 Rock-Paper-Scissor game with codes refactored to work with browsers and a UI.
 
+# Live demo
+- Visit [this Link](https://dexter-pai.github.io/rock-paper-scissor/) for live demo of this simple js game.
+
 # requirements
 - None
 
